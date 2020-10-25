@@ -1,0 +1,26 @@
+main {
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+ul li:nth-child(2n) {
+    background-color: #ee82ee;
+}

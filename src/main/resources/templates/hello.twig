@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <style>
+        main {
+            width: 400px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form .input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 15px;
+        }
+
+        ul li:nth-child(2n) {
+            background-color: #ee82ee;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>
+        Hello {{ user.getLogin() }}
+    </h1>
+    <form method="GET">
+        <label>
+            <input type="submit" value="LOG OUT">
+        </label>
+    </form>
+</main>
+
+</body>
+</html>
